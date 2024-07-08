@@ -1,4 +1,5 @@
-
 FROM ollama/ollama
 
-COPY ollama_files/ .
+RUN mkdir /models
+
+COPY ./ollama_files /root/.ollama
