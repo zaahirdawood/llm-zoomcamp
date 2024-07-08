@@ -1,4 +1,4 @@
-## Homework Week 2
+<img width="747" alt="Screenshot 2024-07-08 at 23 38 45" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/f9e9cf0a-b85a-402f-8111-8105c5bf5349">## Homework Week 2
 
 **Q1:-** What's the version of ollama client?
 
@@ -19,12 +19,15 @@ docker run -it \
 docker exec -it ollama bash
 ```
 
+Gemma Contents
+
+
 ### Step 3 check which Ollama Version
 ```
 ollama -v
 ```
 
-**A:** 
+**A1:** 
 <img width="782" alt="Screenshot 2024-07-08 at 23 21 40" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/a7fbddfe-bd3c-4012-8016-e1baf425465c">
 
 **Q2-Q3:-** Running the LLM/ Run a question to the model
@@ -35,10 +38,21 @@ While in your docker ollama bash console. To run the model we automatically asum
 ollama run gemma:2b
 ```
 
+```
+cat /root/.ollama/models/manifests/registry.ollama.ai/library/gemma/2b
+```
 
+<img width="1225" alt="Screenshot 2024-07-08 at 23 42 35" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/4734f454-87ac-4625-b9c2-81000f384cee">
 
-
-
-
+**A2-A3:** 
 <img width="441" alt="Screenshot 2024-07-08 at 23 29 22" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/4e5edd5e-d1ef-4203-8285-cae5a23c585a">
 
+
+**Q4:-** What's the size of the ollama_files/models folder?
+
+```
+du -h /root/.ollama/models/
+```
+
+**A4:** 
+<img width="747" alt="Screenshot 2024-07-08 at 23 38 45" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/91479808-2bea-425b-b727-72c93c35c5c0">
