@@ -56,3 +56,14 @@ du -h /root/.ollama/models/
 
 **A4:** 
 <img width="747" alt="Screenshot 2024-07-08 at 23 38 45" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/91479808-2bea-425b-b727-72c93c35c5c0">
+
+**Q5:-= Load Gemma:2b model into new container to avoid pulling it each time we run.
+
+**A5:** 
+
+```
+FROM ollama/ollama
+
+COPY ./ollama_files /root/.ollama
+```
+
