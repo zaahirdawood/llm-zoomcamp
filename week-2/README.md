@@ -1,6 +1,6 @@
 ## Homework Week 2
 
-**Q:** What's the version of ollama client?
+**Q1:-** What's the version of ollama client?
 
 ### Step 1 run ollama container 
 
@@ -26,3 +26,19 @@ ollama -v
 
 **A:** 
 <img width="782" alt="Screenshot 2024-07-08 at 23 21 40" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/a7fbddfe-bd3c-4012-8016-e1baf425465c">
+
+**Q2-Q3:-** Running the LLM/ Run a question to the model
+
+While in your docker ollama bash console. To run the model we automatically asumme Q2 was fulfilled
+
+```
+ollama run gemma:2b
+```
+
+
+
+
+
+
+<img width="441" alt="Screenshot 2024-07-08 at 23 29 22" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/4e5edd5e-d1ef-4203-8285-cae5a23c585a">
+
