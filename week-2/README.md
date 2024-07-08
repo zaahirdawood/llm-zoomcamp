@@ -1,7 +1,5 @@
 >## Homework Week 2
 
-<img width="747" alt="Screenshot 2024-07-08 at 23 38 45" src="https://github.com/zaahirdawood/llm-zoomcamp/assets/109787439/f9e9cf0a-b85a-402f-8111-8105c5bf5349"
-
 **Q1:-** What's the version of ollama client?
 
 ### Step 1 run ollama container 
