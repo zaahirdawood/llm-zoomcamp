@@ -12,7 +12,7 @@ services:
       POSTGRES_PASSWORD: "admin"
       POSTGRES_HOST: "metrics-db"
       POSTGRES_PORT: 5432
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      GROQ_API_KEY: ${GROQ_API_KEY}
     ports:
     - 8501:8501
     volumes:
@@ -39,7 +39,7 @@ services:
       - documents-db
     environment:
       POSTGRES_HOST: "metrics-db"
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      GROQ_API_KEY: ${GROQ_API_KEY}
 
   metrics-db:
     image: postgres:13
