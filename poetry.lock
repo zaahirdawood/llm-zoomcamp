@@ -2545,6 +2545,20 @@ files = [
 ]
 
 [[package]]
+name = "rouge"
+version = "1.0.1"
+description = "Full Python ROUGE Score Implementation (not a wrapper)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "rouge-1.0.1-py3-none-any.whl", hash = "sha256:28d118536e8c774dc47d1d15ec266479b4dd0914c4672ce117d4002789bdc644"},
+    {file = "rouge-1.0.1.tar.gz", hash = "sha256:12b48346ca47d6bcf3c45061f315452b9ccec0620ee895ec85b7efc3d54aae34"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "rpds-py"
 version = "0.19.0"
 description = "Python bindings to Rust's persistent data structures (rpds)"
@@ -3480,4 +3494,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "662eb109f2d6c6c51466c9fbee222cf00d9f98317fb497c935a8fde17fdc8cbe"
+content-hash = "b90e7232fe7cb280f01a4aff079fae84cf6aed085c4bed38252ab044ecf3099b"
