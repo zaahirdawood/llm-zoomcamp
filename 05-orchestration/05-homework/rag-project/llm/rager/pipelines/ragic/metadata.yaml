@@ -3,25 +3,6 @@ blocks:
   color: null
   configuration:
     file_source:
-      path: rager/transformers/radiant_photon.py
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  groups:
-  - chunking
-  has_callback: false
-  language: python
-  name: Radiant photon
-  retry_config: null
-  status: not_executed
-  timeout: null
-  type: transformer
-  upstream_blocks: []
-  uuid: radiant_photon
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    file_source:
       path: rager/transformers/vivid_nexus.py
     templates:
       lemmatization_spacy:
@@ -123,6 +104,25 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: primordial_alchemy
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/sublime_mecha.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - chunking
+  has_callback: false
+  language: python
+  name: Sublime mecha
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: sublime_mecha
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
