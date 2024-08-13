@@ -164,3 +164,5 @@ cython_debug/
 Miniconda3-py310_24.4.0-0-Linux-x86_64.sh
 
 ollama_files/
+
+.env.dev
