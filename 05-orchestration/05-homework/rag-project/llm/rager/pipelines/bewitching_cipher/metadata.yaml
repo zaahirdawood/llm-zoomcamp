@@ -3,7 +3,7 @@ blocks:
   color: null
   configuration:
     file_source:
-      path: rager/data_loaders/unearthly_phantasm.py
+      path: rager/data_loaders/galvanized_crucible.py
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -11,13 +11,108 @@ blocks:
   - ingest
   has_callback: false
   language: python
-  name: Unearthly phantasm
+  name: Galvanized crucible
   retry_config: null
   status: not_executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: unearthly_phantasm
+  uuid: galvanized_crucible
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/dauntless_quicksilver.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - chunking
+  has_callback: false
+  language: python
+  name: Dauntless quicksilver
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: dauntless_quicksilver
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/unfathomable_zenith.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - tokenization
+  has_callback: false
+  language: python
+  name: Unfathomable zenith
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: unfathomable_zenith
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/galvanizing_pinnacle.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - embed
+  has_callback: false
+  language: python
+  name: Galvanizing pinnacle
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: galvanizing_pinnacle
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1723756989
+      name: resplendent_quasar.py
+      output: null
+      path: /home/src/llm/rager/data_exporters/resplendent_quasar.py
+      relative_path: llm/rager/data_exporters/resplendent_quasar.py
+      size: 2226
+    file_source:
+      path: rager/data_exporters/resplendent_quasar.py
+    templates:
+      elasticsearch:
+        variables:
+          connection_string: http://elasticsearch:9200
+          dimensions: null
+          index_name: index_name
+          number_of_replicas: 0
+          number_of_shards: 1
+          vector_column_name: ''
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - vector_database
+  has_callback: false
+  language: python
+  name: Resplendent quasar
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: resplendent_quasar
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -41,5 +136,7 @@ spark_config: {}
 tags: []
 type: python
 uuid: bewitching_cipher
+variables:
+  index_name: index_name_20240815_2021
 variables_dir: /home/src/mage_data/rager
 widgets: []
