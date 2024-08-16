@@ -82,20 +82,20 @@ blocks:
       content: null
       extension: py
       language: python
-      modified_timestamp: 1723756989
-      name: resplendent_quasar.py
+      modified_timestamp: 1723804509
+      name: translucent_wraith.py
       output: null
-      path: /home/src/llm/rager/data_exporters/resplendent_quasar.py
-      relative_path: llm/rager/data_exporters/resplendent_quasar.py
-      size: 2226
+      path: /home/src/llm/rager/data_exporters/translucent_wraith.py
+      relative_path: llm/rager/data_exporters/translucent_wraith.py
+      size: 2314
     file_source:
-      path: rager/data_exporters/resplendent_quasar.py
+      path: rager/data_exporters/translucent_wraith.py
     templates:
       elasticsearch:
         variables:
           connection_string: http://elasticsearch:9200
           dimensions: null
-          index_name: index_name
+          index_name: documents
           number_of_replicas: 0
           number_of_shards: 1
           vector_column_name: ''
@@ -106,13 +106,13 @@ blocks:
   - vector_database
   has_callback: false
   language: python
-  name: Resplendent quasar
+  name: Translucent wraith
   retry_config: null
-  status: failed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks: []
-  uuid: resplendent_quasar
+  uuid: translucent_wraith
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -137,6 +137,6 @@ tags: []
 type: python
 uuid: bewitching_cipher
 variables:
-  index_name: index_name_20240815_2021
+  index_name: documents_20240816_5013
 variables_dir: /home/src/mage_data/rager
 widgets: []
