@@ -26,10 +26,10 @@ def elasticsearch(
     number_of_replicas = kwargs.get('number_of_replicas', 0)
 
 
-    #dimensions = kwargs.get('dimensions')
-    #if dimensions is None and len(documents) > 0:
-        #document = documents[0]
-        #dimensions = len(document.get(vector_column_name) or [])
+    dimensions = kwargs.get('dimensions')
+    if dimensions is None and len(documents) > 0:
+        document = documents[0]
+        # dimensions = len(document.get(vector_column_name) or [])
 
     es_client = Elasticsearch(connection_string)
 
@@ -54,7 +54,7 @@ def elasticsearch(
     if not es_client.indices.exists(index=index_name):
         es_client.indices.create(index=index_name)
         print('Index created with properties:', index_settings)
-        
+        # print('Embedding dimensions:', dimensions)
 
     print(f'Indexing {len(documents)} documents to Elasticsearch index {index_name}')
     for document in documents:

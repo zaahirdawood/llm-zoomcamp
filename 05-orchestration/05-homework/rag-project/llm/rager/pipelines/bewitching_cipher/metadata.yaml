@@ -108,7 +108,7 @@ blocks:
   language: python
   name: Translucent wraith
   retry_config: null
-  status: not_executed
+  status: failed
   timeout: null
   type: data_exporter
   upstream_blocks: []
@@ -137,6 +137,6 @@ tags: []
 type: python
 uuid: bewitching_cipher
 variables:
-  index_name: documents_20240816_5013
+  index_name: documents_20240816_4805
 variables_dir: /home/src/mage_data/rager
 widgets: []
