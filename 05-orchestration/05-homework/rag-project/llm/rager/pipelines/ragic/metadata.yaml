@@ -2,6 +2,61 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1722152262
+      name: runic_oblivion.py
+      output: null
+      path: /home/src/default_repo/llm/rager/data_loaders/runic_oblivion.py
+      relative_path: llm/rager/data_loaders/runic_oblivion.py
+      size: 1406
+    file_source:
+      path: rager/data_loaders/runic_oblivion.py
+    templates:
+      api:
+        variables:
+          auth_token: null
+          endpoint: https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/01-intro/documents.json
+          method: GET
+          timeout: 30
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - ingest
+  has_callback: false
+  language: python
+  name: Runic oblivion
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: runic_oblivion
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/radiant_photon.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - chunking
+  has_callback: false
+  language: python
+  name: Radiant photon
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: radiant_photon
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
     file_source:
       path: rager/transformers/vivid_nexus.py
     templates:
@@ -85,44 +140,6 @@ blocks:
   type: data_exporter
   upstream_blocks: []
   uuid: numinous_fission
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    file_source:
-      path: rager/data_loaders/primordial_alchemy.py
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  groups:
-  - ingest
-  has_callback: false
-  language: python
-  name: Primordial alchemy
-  retry_config: null
-  status: not_executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: primordial_alchemy
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    file_source:
-      path: rager/transformers/sublime_mecha.py
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  groups:
-  - chunking
-  has_callback: false
-  language: python
-  name: Sublime mecha
-  retry_config: null
-  status: not_executed
-  timeout: null
-  type: transformer
-  upstream_blocks: []
-  uuid: sublime_mecha
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -146,5 +163,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: ragic
-variables_dir: /home/src/mage_data/rager
+variables_dir: /root/.mage_data/rager
 widgets: []
