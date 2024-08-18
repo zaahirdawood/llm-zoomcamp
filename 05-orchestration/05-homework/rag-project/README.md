@@ -274,7 +274,8 @@ Our FAQ document changes: every day course participants add
 new records or improve existing ones.
 
 Imagine some time passed and the document changed. For that we have another version of the FAQ document: [version 2]
-![Question 5](https://docs.google.com/document/d/1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0/edit).
+
+![Question 5](https://docs.google.com/document/d/1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0).
 
 The ID of this document is `1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0`.
 
