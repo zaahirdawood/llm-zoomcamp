@@ -99,6 +99,6 @@ tags: []
 type: python
 uuid: illuminating_quasar
 variables:
-  index_name: documents_20240818_2201
+  index_name: documents_20240818_2652
 variables_dir: /home/src/mage_data/rager
 widgets: []
