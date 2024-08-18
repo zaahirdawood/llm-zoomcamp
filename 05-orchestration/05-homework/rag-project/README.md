@@ -277,4 +277,4 @@ Let's re-execute the entire pipeline with the updated data.
 
 For the same query "When is the next cohort?". What's the ID of the top matching result?
 
-#### Answer_Q6: 
+#### Answer_Q6: b6fa77f3
