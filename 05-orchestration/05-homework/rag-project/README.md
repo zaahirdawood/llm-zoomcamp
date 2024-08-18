@@ -248,7 +248,9 @@ Now execute the block.
 
 What's the last document id?
 
-Also note the index name.
+Also note the index name. As shown below:
+
+![Question 4]([https://github.com/username/repo-name/blob/main/image.png](https://github.com/zaahirdawood/llm-zoomcamp/blob/main/05-orchestration/05-homework/q4.png))
 
 #### Answer_Q4: fa136280
 
@@ -259,7 +261,9 @@ test it.
 
 Let's use the following query: "When is the next cohort?"
 
-What's the ID of the top matching result?
+What's the ID of the top matching result?, as shown below
+
+![Question 5](05-orchestration/05-homework/q5.png)
 
 #### Answer_Q5: bf024675
 
@@ -269,12 +273,16 @@ What's the ID of the top matching result?
 Our FAQ document changes: every day course participants add
 new records or improve existing ones.
 
-Imagine some time passed and the document changed. For that we have another version of the FAQ document: [version 2](https://docs.google.com/document/d/1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0/edit).
+Imagine some time passed and the document changed. For that we have another version of the FAQ document: [version 2]
+![Question 5](https://docs.google.com/document/d/1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0/edit).
 
 The ID of this document is `1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0`.
 
 Let's re-execute the entire pipeline with the updated data.
 
-For the same query "When is the next cohort?". What's the ID of the top matching result?
+For the same query "When is the next cohort?". What's the ID of the top matching result? as shown below:
+
+![Question 6](05-orchestration/05-homework/q6.png).
+
 
 #### Answer_Q6: b6fa77f3
